@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+  }
+
+  :root {
+    --bg-color: #fff;
+    --primary: #db7525;
+    --secondary: #e0e0e0cc;
+    --navy: #000080;
+    --text-primary: #fff;
+    --text-secondary: #222;
+    --a-primary: #000;
+    --a-secondary: #221f1f;
+    }
+
+  body {
+    background-color: var(--bg-color);
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  #topboxes {
+    display: flex;
+    margin: 1rem;
+  }
+
+   #topboxes #officeuse {
+    background-color: grey;
+    border: 5px solid black;
+    width: 49%;
+  }
+
+ 
+  @media (max-width: 1400px) {
+    #topboxes #officeuse h2 {
+    font-size: 18px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #topboxes #officeuse h2 {
+    font-size: 11px;
+    }
+  }
+
+  #centerspace {
+    width: 2%;
+  }
+
+  #GCAinfo {
+    border: 5px solid var(--navy);
+    display: flex;
+    width: 49%;
+  }
+
+  #GCAinfo div h2 img {
+    width: 100px;
+    height: 100px;
+  }
+
+ @media (max-width: 1400px) {
+    #GCAinfo div h2 {
+        font-size: 11px;
+      }
+ }
+
+ #clientdata h2 {
+    font-size: 2rem;
+    
+
+}
+
+@media (max-width: 800px) {
+    #clientdata h2 {
+        font-size: .66rem;
+        
+    
+    }
+}
+
+
+#clientdata input {
+    margin: .5rem;
+}
+  
+#address {
+    width: 20000px;
+}
+
+@media (max-width: 1000px) {
+    #address {
+        width: 1800px;
+        font-size: 11px;
+      }
+ }
+
+ @media (max-width: 800px) {
+    #address {
+        width: 600px;
+        font-size: 11px;
+      }
+ }
+
+ #gender {
+  display: flex;
+ }
+
+ #clientagreement {
+  text-decoration: underline;
+ }
+
+ button {
+  cursor: pointer;
+  border: 7px solid var(--navy);
+  color: var(--navy);
+  padding: 25px 42px;
+  font-size: 30px;
+  border-radius: 15px;
+  margin: 25px;
+ }
+
+ button:hover {
+  background-color: var(--primary);
+  color: var(--text-primary)
+ }

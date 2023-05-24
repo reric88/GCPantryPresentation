@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food Pantry Application for Grayson County Alliance">
+    <link rel="stylesheet" href="GCAstyle.css">
+    <title>Food Pantry Application</title>
+</head>
+<body>
+    <!-- The two boxes at the top of the page -->
+   <div id="topboxes">
+    <form id="officeuse">
+        <h2>
+            Office Use Only:</h2>
+
+           <h2> New Client <input type="checkbox"> Update C-192020 <input type="checkbox"></h2>   
+           <h2> Off-site Client <input type="checkbox"><h2></h2><h2> Senior Household (60 and up) <input type="checkbox"></h2>
+           <h2>Reviewed by Volunteer/Staff <input type="checkbox"></h2>
+
+
+        </h2>
+        </form>
+        <form action="">
+        <div id="centerspace"></div>
+    <div id="GCAinfo">
+        <div>
+        <h2><img src="./Images/GCALogo2.png" alt="Grayson County Alliance Logo"></h2></div>
+        <div>
+        <h2>Grayson County Alliance</h2>
+        <h2>2203 Brandenburg Road, Leitchfield, KY 42754</h2>
+        <h2>270-259-4000 Email: info@gc-alliance.com</h2>
+        <h2><strong>New Client: Please call for times. </strong></h2>
+        </div>
+    </div>
+   </div>
+<!-- The main form -->
+   <div id="clientdata">
+        <h2>First Name<input type="text" required>Last Name<input type="text" required></h2>
+        <h2>Address<input type="text" size="100"></h2>
+        <h2>City<input type="text">State <input type="text">Zip<input type="text"> </h2> <hr>
+        <h2>SS# (last five digits)<input type=text>Birthdate <input type="date"> </h2>
+        <h2>Phone: <input type="tel">OK to Text <input type="checkbox">Have Driver's License <input type="checkbox"> </h2>
+        <h2>Alternate Contact<input type="text">Contact Phone<input type="tel"></h2>
+        <h2>Gross monthly income<input type="number" min="0">Head of Household<input type="checkbox"></h2><hr>
+        <h2>Name of Spouse <input type="text"></h2>
+        <h2>Total Household Numbers <input type="number"> Children <input type="number">Adults <input type="number">Seniors (60+) <input type="number"></h2>
+        <hr>
+        <h2>Gender:</h2> 
+           <h2 id="gender"> <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <input type="radio" id="unknown" name="gender" value="unknown">
+            <label for="other">Unknown</label>
+            <input type="radio" id="refused" name="gender" value="other">
+            <label for="refused">Refused</label>
+            </h2>
+            <hr>
+        <h2>Marital Status:</h2>
+            <h2 id="marriage"><input type="radio" id="married" name="mstatus" value="married">
+                <label for="married">Married</label>
+                <input type="radio" id="single" name="mstatus" value="single">
+                <label for="single">Single</label>
+                <input type="radio" id="partnered" name="mstatus" value="partnered">
+                <label for="partnered">Partnered</label>
+                <input type="radio" id="widowed" name="mstatus" value="widowed">
+                <label for="widowed">Widowed</label>
+                <input type="radio" id="separated" name="mstatus" value="separated">
+                <label for="separated">Separated</label>
+                <input type="radio" id="divorced" name="mstatus" value="divorced">
+                <label for="divorced">Divorced</label>
+                <input type="radio" id="unknown" name="mstatus" value="unknown">
+                <label for="unknown">Unknown</label>
+                <input type="radio" id="refused" name="mstatus" value="refused">
+                <label for="refused">Refused</label>
+                </h2>
+                <hr>
+            <h2>Ethnicity:</h2>
+            <h2 id="ethnicity"><input type="radio" id="white" name="ethnic" value="white">
+                <label for="white">White</label>
+                <input type="radio" id="africanamerican" name="ethnic" value="africanamerican">
+                <label for="africanamerican">African-American</label>
+                <input type="radio" id="asian" name="ethnic" value="asian">
+                <label for="asian">Asian</label>
+                <input type="radio" id="pacificislander" name="ethnic" value="pacificislander">
+                <label for="pacificislander">Pacific Islander</label>
+                <input type="radio" id="nativeamerican" name="ethnic" value="nativeamerican">
+                <label for="nativeamerican">Native American</label>
+                <input type="radio" id="latino" name="ethnic" value="latino">
+                <label for="latino">Latino</label>
+                <input type="radio" id="other" name="ethnic" value="other">
+                <label for="other">Other</label>
+                <input type="radio" id="unknown" name="ethnic" value="unknown">
+                <label for="unknown">Unknown</label>
+                <input type="radio" id="refused" name="ethnic" value="refused">
+                <label for="refused">Refused</label>
+                </h2><hr>
+            <h2>Employment Status:</h2>
+                <h2 id="employ"><input type="radio" id="employed" name="estatus" value="employed">
+                    <label for="employed">Employed</label>
+                    <input type="radio" id="unemployed" name="estatus" value="unemployed">
+                    <label for="unemployed">Unemployed</label>
+                    <input type="radio" id="disabled" name="estatus" value="disabled">
+                    <label for="disabled">Disabled</label>
+                    <input type="radio" id="retired" name="estatus" value="retired">
+                    <label for="retired">Retired</label>
+                    <input type="radio" id="other" name="estatus" value="other">
+                    <label for="other">Other</label>
+                    <input type="radio" id="unknown" name="estatus" value="unknown">
+                    <label for="unknown">Unknown</label>
+                    <input type="radio" id="refused" name="estatus" value="refused">
+                    <label for="refused">Refused</label>
+                    </h2><hr>
+            <h2>Education completed:</h2>
+                    <h2 id="education"><input type="radio" id="highschool" name="edstatus" value="highschool">
+                        <label for="highschool">High School</label>
+                        <input type="radio" id="ged" name="edstatus" value="ged">
+                        <label for="ged">GED</label>
+                        <input type="radio" id="voc" name="edstatus" value="voc">
+                        <label for="voc">Vocational</label>
+                        <input type="radio" id="college" name="edstatus" value="college">
+                        <label for="college">College</label>
+                        <input type="radio" id="none" name="edstatus" value="none">
+                        <label for="none">None</label>
+                        <input type="radio" id="other" name="edstatus" value="other">
+                        <label for="other">Other</label>
+                        <input type="radio" id="refused" name="edstatus" value="refused">
+                        <label for="refused">Refused</label>
+                        <hr>
+            <h2>Military:</h2>
+                    <h2 id="military"><input type="radio" id="active" name="mistatus" value="active">
+                    <label for="active">Active Duty</label>
+                    <input type="radio" id="reserves" name="mistatus"value="reserves">                <label for="reserves">Reserves</label>
+                    <input type="radio" id="discharge" name="mistatus" value="discharge">
+                    <label for="discharge">Dischared</label>
+                    <input type="radio" id="retired"name="mistatus" value="retired">                       
+                    <label for="retired">Retired</label>
+                    <input type="radio" id="none" name="mistatus" value="none">
+                    <label for="none">None</label>
+                    <input type="radio" id="unknown"name="mistatus" value="unknown">                        <label for="unknown">Unknown</label>
+                    <input type="radio" id="refused" name="edstatus" value="refused">
+                    <label for="refused">Refused</label>
+                    <hr>
+            </h2>
+            <h3 ><strong id="clientagreement">CLIENT AGREEMENT-I understand that I must meet income and residency guidelines to qualify for services and that these guidelines are subject to change.</strong> I understand that Grayson County Alliance enters all service data and application information into the Charity Check software system. I understand that my photo or ID may accompany my information. I understand that I may be disqualified from receiving assistance by making false statements or from the withholding of documentation. I further understand that I may be subject to criminal prosecution under State and Federal law and it may result in having to repay for the value of food or services improperly issued to me. The goal of the GCA (Food Pantry) is to provide food and other services to assist individuals as they become self-sufficient. I give the Alliance permission to verify and/or share with the referring agencies the information that I have provided about my household.</h3><br>
+            <h3>I have read the above, or had it read to me, and I fully understand the information in this document. I agree to abide by all the rules and procedures of this program. I hereby authorize Grayson County Alliance to obtain and/or release any information pertaining to my request for assistance.</h3><br>
+            <h2><strong>THIS AUTHORIZATION DOES NOT EXPIRE UNLESS REQUESTED IN WRITING</strong></h2>
+   </div>
+   <button type="button" onclick="alert('Your information has been submitted. Have a nice day!')">Submit form</button>
+</form>
+
+</body>
+</html>
