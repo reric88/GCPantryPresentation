@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Page for Grayson County Food Alliance">
+    <link rel="stylesheet" href="contact.css">
+    <script defer src="https://kit.fontawesome.com/85903b6d38.js" crossorigin="anonymous"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <!-- <script defer src="contact.js"></script> -->
+    <title>Grayson County Alliance</title>
+</head>
+<body>
+
+<!-- #region Horizontal Navbar -->
+<navbar>
+  <div id="horizontal-navbar" class="h-navbar-pos">
+    <div id="h-navbar-content-container">
+      <div id="h-navbar-top">
+        <div id="searchbar-container">
+          <form>
+            <input
+              type="search"
+              id="searchbar"
+              name="searchbar"
+              class="form-input"
+            />
+            <button class="form-button">Search</button>
+          </form>
+        </div>
+        <div id="social-media">
+          <a href="https://www.facebook.com/GraysonCoAlliance/"
+            ><i class="fa-brands fa-facebook nav-social-media"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-instagram nav-social-media"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-youtube nav-social-media"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-linkedin nav-social-media"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-twitter nav-social-media"></i
+          ></a>
+        </div>
+      </div>
+      <div id="h-navbar-bottom">
+        <a href="../index.html"><img
+          class="logo-shrink"
+          id="h-navbar-logo-bottom"
+          src="../Images/GCALogo1.png"
+          alt="Logo for Grayson County Alliance"
+        /></a>
+        <ul class="list-title-container">
+          <li class="list-title">
+            Our&#160;Programs
+            <ul class="list-content">
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/food-pantry" class="list-a">Food Pantry</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/backpack-food-program" class="list-a">Backpack Food Program</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/vita-tax-site" class="list-a">VITA (Tax Site)</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/classroom" class="list-a">Classroom</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="list-title-container">
+          <li class="list-title">
+            Get&#160;Involved
+            <ul class="list-content">
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/donate" class="list-a">Donate</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/volunteer" class="list-a">Volunteer</a>
+              </li>
+              <li class="list-content-items">
+                <a href="#" class="list-a">Volunteer FAQs</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/art-in-the-park" class="list-a">Art in the Park</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/empty-bowls" class="list-a">Empty Bowls</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://gc-alliance.com/ducking-hunger-regatta" class="list-a">Ducking Hunger Regatta</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="list-title-container">
+          <li class="list-title">
+            Our&#160;Partners
+            <ul class="list-content">
+              <li class="list-content-items">
+                <a href="https://feedingamericaky.org/" class="list-a">Feeding America KY</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://www.unitedwayck.org/" class="list-a">United Way</a>
+              </li>
+              <li class="list-content-items">
+                <a href="http://www.navigateresources.net/uwcky/" class="list-a">2-1-1</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://www.kycolonels.org/" class="list-a">Kentucky Colonels</a>
+              </li>
+              <li class="list-content-items">
+                <a href="https://grabc.org/" class="list-a">Green River ABC</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a href="../FinalProject/index.html" class="h-navbar-bottom-links">About&#160;Us</a>
+        <a href="#" class="h-navbar-bottom-links">Contact</a>
+        <!-- <a href="#" class="h-navbar-bottom-links">GCA&#160;Resources</a> -->
+      </div>
+    </div>
+  </div>
+  </navbar>
+    <!-- #endregion -->
+
+    <!-- Header to explain this is a contact page and to invite user in. Will   -->
+     <header> 
+        <!-- <h1 class="titlesplash">
+            Contact us today!
+        </h1>
+        <a href="index.html"><img id=logohome src="./Images/GCALogo1.png" alt="Grayson County Alliance Logo"></a> -->
+        <h2>If you need assistance or want to volunteer, <em>please</em> contact us below</h2>
+    </header>
+
+    <!-- Icons and links to email and phone -->
+    <div class="contacticons">
+        <h2><a href="tel:+12702594000"><i id="phone" class="fa-solid fa-square-phone"></i>1-270-259-4000</a>
+        <a href="email:info@gc-alliance.com"><i id="email" class="fa-solid fa-square-envelope"></i>info@gc-alliance.com</a><a href="GCA-application.html">GCA Application</a></h2>
+    </div>
+    <div id="map-container">
+    <p class="ouraddress">We are located at 2203 Brandenburg Rd. Leitchfield, KY 42754</p>
+    <hr>
+
+    <!-- A Google map -->
+    <div id="map">
+    <iframe id="mymap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9343472871687!2d-86.29266022330576!3d37.50946657205332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886f4b710fdccf89%3A0x50892947e262349e!2s2203%20Brandenburg%20Rd%2C%20Leitchfield%2C%20KY%2042754!5e0!3m2!1sen!2sus!4v1683033097021!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+</div>
+
+
+<!-- <a id="GCA-apply" href="GCA-application.html">GCA Application</a> -->
+
+<!-- An image that still needs changed and fixed -->
+<!-- <div class="image">
+    <img src="./Images/foodinwarehouse.webp"></a>
+</div> -->
+
+<section id="section-five">
+    <div id="footer-links">
+    <footer>
+        <div class="block block-footer">
+            <a href="https://gc-alliance.com/privacy-policy">Privacy Policy</a>
+        </div>
+        <div class="block block-footer" id="copyright">
+          <a href="#">Copyright © Commonwealth Coders 2023 - All Rights Reserved</a>
+        </div>
+        <div class="block block-footer">
+            <a href="https://gc-alliance.com/terms-and-conditions">Terms and Conditions</a>
+        </div>
+      </div>
+    </footer>
+</section>
+<script>
+// #region HORIZONTAL NAVBAR
+
+const hNav = document.querySelector("#horizontal-navbar");
+const hNavTop = document.querySelector("#h-navbar-top");
+const hNavLogo = document.querySelector("#h-navbar-logo");
+const listTitle = document.querySelectorAll(".list-title");
+const listContent = document.querySelectorAll(".list-content");
+const listContentItems = document.querySelectorAll(".list-content-items");
+const searchbar = document.querySelector("#searchbar");
+const topLogo = document.querySelector("#h-navbar-logo-top");
+const bottomLogo = document.querySelector("#h-navbar-logo-bottom");
+
+logoSize = () =>{
+  if (hNav.classList.contains('h-navbar-slide')){
+    bottomLogo.className = 'logo-grow';
+  } else {
+    bottomLogo.className = 'logo-shrink';
+  }
+}
+
+hNav.addEventListener("mouseover", () => {
+  hNav.classList.remove("h-navbar-pos");
+  hNav.classList.add("h-navbar-slide");
+  logoSize();
+  // bottomLogo.classList.remove('logo-shrink');
+  // bottomLogo.classList.add('logo-grow');
+  // hNavLogo.classList.add("h-navbar-logo-grow");
+});
+
+hNav.addEventListener("mouseleave", () => {
+  if (!searchbar.matches(":focus")) {
+    setTimeout(() => {
+      hNav.classList.add("h-navbar-pos");
+      hNav.classList.remove("h-navbar-slide");
+      logoSize();
+      // bottomLogo.classList.add('logo-shrink')
+      // bottomLogo.classList.remove('logo-grow')
+      // hNavLogo.classList.remove("h-navbar-logo-grow");
+    }, 1000);
+  }
+});
+
+
+
+listTitle.forEach((title) => {
+  title.addEventListener("mouseover", () => {
+    const titleChild = title.firstElementChild;
+    titleChild.classList.add("content-display");
+    listContent.forEach((list) => {
+      title.classList.add("orange-bg");
+      list.addEventListener("mouseover", () => {
+        list.classList.add("content-display");
+      });
+    });
+  });
+  title.addEventListener("mouseleave", () => {
+    const titleChild = title.firstElementChild;
+    titleChild.classList.remove("content-display");
+    listContent.forEach((list) => {
+      title.classList.remove("orange-bg");
+      list.addEventListener("mouseleave", () => {
+        list.classList.remove("content-display");
+      });
+    });
+  });
+});
+
+searchbar.addEventListener("focus", () => {
+  hNav.classList.add("h-navbar-slide");
+  hNav.classList.remove("h-navbar-pos");
+  logoSize();
+});
+
+searchbar.addEventListener("blur", () => {
+  hNav.classList.remove("h-navbar-slide");
+  hNav.classList.add("h-navbar-pos");
+  logoSize();
+});
+
+// #endregion
+
+</script>
+</body>
+</html>

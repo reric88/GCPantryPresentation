@@ -1,0 +1,665 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 200, "opsz" 48;
+}
+
+/* #region Defaults and Variables */
+
+:root {
+  --bg-color: #fff;
+  --primary: #db7525;
+  --secondary: #e0e0e0cc;
+  --navy: #000080;
+  --text-primary: #fff;
+  --text-secondary: #222;
+  --a-primary: #000;
+  --a-secondary: #221f1f;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h4 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h5 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h6 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  background-color: var(--bg-color);
+  width: 100vw;
+  padding-right: 2rem;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--primary);
+  transition: background-color 500ms;
+}
+
+button:hover {
+  background-color: #181818;
+  transition: background-color 500ms;
+}
+
+button a {
+  color: var(--text-primary);
+  line-height: 2rem;
+}
+
+.form-input {
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  width: 30rem;
+  height: 5rem;
+  margin-left: 0;
+  border: none;
+  font-size: 2.3rem;
+  padding-left: 2rem;
+  background-color: #eee;
+}
+
+.form-button {
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  height: 5rem;
+  width: 12rem;
+  border: none;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  background-color: rgb(253, 143, 58);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #111;
+}
+
+.idk-makes-header-work {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* #endregion */
+
+/* #region Horizontal Navbar */
+
+navbar {
+  width: 105%;
+  position: fixed;
+  left: -1rem;
+  z-index: 99;
+  top: 1rem;
+}
+
+navbar i {
+  color: black;
+}
+
+navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+#horizontal-navbar {
+  background-color: #fff;
+  box-shadow: 0 0 1rem 0.1rem #1115;
+  width: 100%;
+  height: 15rem;
+  top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  z-index: 999;
+  transition: transform 500ms;
+}
+
+.orange-bg {
+  background-color: var(--primary);
+  color: var(--text-primary);
+}
+
+.h-navbar-pos {
+  transform: translateY(-11rem);
+  transition: transform 500ms;
+}
+
+.h-navbar-slide {
+  transform: translateY(-1rem);
+  transition: transform 500ms;
+}
+
+#h-navbar-content-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#h-navbar-top {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#resources {
+  width: fit-content;
+  margin-right: -30rem;
+}
+
+#resources a h5 {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#searchbar-container {
+  margin-right: 1%;
+}
+
+#searchbar-container form input {
+  border-radius: 30px 0 0 30px;
+}
+
+#searchbar-container form button {
+  border-radius: 0 30px 30px 0;
+}
+
+#social-media {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15%;
+}
+
+#social-media i {
+  font-size: 5rem;
+  margin: 0 3rem;
+}
+
+#h-navbar-bottom {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .h-navbar-logo-grow {
+    transform: scale(1);
+    transform: translate(-10rem, -5rem);
+    transition: transform 500ms;
+  } */
+
+/* #h-navbar-logo-top {
+height: 15rem;
+transform: scale(0.4);
+transition: transform 500ms;
+} */
+
+#h-navbar-logo-bottom {
+  height: 15rem;
+  /* margin-right: 10rem; */
+}
+
+.logo-shrink {
+  transform: scale(0.4);
+  transition: transform 500ms;
+}
+
+.logo-grow {
+  transform: scale(1);
+  transform: translateY(-5rem);
+  transition: transform 500ms;
+}
+
+#h-navbar-logo-bottom-grow {
+  transform: scale(1);
+  transition: transform 500ms;
+}
+
+.title-list-container {
+  padding: 0;
+}
+
+.list-title {
+  padding: 1rem 2rem 0rem 2rem;
+  border-radius: 1rem 1rem 0 0;
+  margin-bottom: 0;
+  /* transform: translateY(.2rem); */
+  cursor: pointer;
+}
+
+#h-navbar-bottom ul {
+  list-style-type: none;
+}
+
+#h-navbar-bottom a {
+  font-size: 3rem;
+  font-weight: 400;
+  width: fit-content;
+}
+
+#h-navbar-bottom ul li {
+  font-size: 3rem;
+}
+
+.list-content {
+  display: none;
+  background-color: var(--primary);
+}
+
+.no-display {
+  display: none;
+}
+
+.content-display {
+  display: block;
+  position: absolute;
+  margin-left: -2rem;
+  padding: 0;
+  text-align: left;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.content-display:last-child {
+  border-radius: 0 0 1rem 1rem;
+  overflow: hidden;
+}
+
+.list-white {
+  color: var(--text-primary);
+}
+
+.list-black {
+  color: var(--text-secondary);
+}
+
+.list-a {
+  color: white;
+}
+
+.nav-social-media:hover,
+#h5-resources:hover {
+  color: var(--primary);
+}
+
+.list-content-items {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+}
+
+.list-content-items:hover a {
+  color: var(--primary);
+}
+
+.list-content-items:hover {
+  background-color: #ddde;
+  color: var(--primary);
+  transition: background-color 500ms, color 250ms;
+}
+
+.h-navbar-bottom-links {
+  padding: 1rem 2rem 0 2rem;
+  border-radius: 1rem 1rem 0 0;
+  margin-left: 2rem;
+}
+
+.h-navbar-bottom-links:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* #endregion */
+
+.titlesplash {
+  font-size: 3rem;
+}
+
+@media (max-width: 1400px) {
+  .titlesplash {
+    font-size: 2rem;
+  }
+}
+
+header {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary);
+}
+
+header h2 {
+  font-size: 3rem;
+}
+
+em {
+  font-size: 3rem;
+}
+
+/* GCA logo links to home page */
+
+#logohome {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px;
+  width: 150px;
+}
+
+/*  h2 styles and media queries */
+.calltoaction {
+  font-size: 3rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--primary);
+}
+
+@media (max-width: 1400px) {
+  .calltoaction {
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+  }
+}
+
+@media (max-width: 800px) {
+  .calltoaction {
+    font-size: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--primary);
+  }
+}
+
+.contacticons {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.contacticons h2 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+/*  */
+
+.contacticons h2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  text-decoration: none;
+  color: var(--primary);
+  background-color: var(--bg-color);
+  margin: 0.5em;
+  border: 7px solid var(--navy);
+  border-radius: 20px;
+}
+
+@media (max-width: 1400px) {
+  .contacticons h2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 0.5em;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--bg-color);
+    margin: 0.5em;
+    border: 7px solid var(--navy);
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contacticons h2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 0.75em;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--bg-color);
+    margin: 0.5em;
+    border: 7px solid var(--navy);
+    border-radius: 20px;
+  }
+}
+
+.contacticons h2 a:hover {
+  background-color: var(--primary);
+  color: var(--bg-color);
+}
+
+/* div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* trying to center map */
+
+#map-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mymap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  height: 50rem;
+  margin: 2rem auto;
+}
+#map {
+  min-width: fit-content;
+  width: 100rem;
+  height: fit-content;
+  background-color: #1112;
+  padding: 1rem 2rem;
+}
+
+div h2 a {
+  padding: 10px;
+  border: 10px solid var(--navy);
+  border-radius: 20px;
+  font-size: 1em;
+}
+
+/*  p element with address and media queries */
+.ouraddress {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  text-emphasis: bold;
+}
+
+@media (max-width: 1400px) {
+  .ouraddress {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-emphasis: bold;
+  }
+}
+
+@media (max-width: 900px) {
+  .ouraddress {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-emphasis: bold;
+  }
+}
+
+@media (max-width: 500px) {
+  .ouraddress {
+    display: flex;
+    justify-content: center;
+    font-size: 0.75rem;
+    text-emphasis: bold;
+  }
+}
+
+/* Application text */
+#GCA-apply {
+  width:fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: 3em;
+  text-decoration: none;
+  color: var(--primary);
+  background-color: var(--bg-color);
+  margin: 0.5em;
+  border: 7px solid var(--navy);
+  border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+  #GCA-apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 3em;
+    text-decoration: none;
+    color: var(--primary);
+    background-color: var(--bg-color);
+    margin: 0.5em;
+    border: 7px solid var(--navy);
+    border-radius: 20px;
+  }
+}
+#GCA-apply:hover {
+  background-color: var(--primary);
+  color: var(--bg-color);
+}
+
+/* probably need new image and some text info here. Maybe also some .  */
+/* .image {
+    background-image: url(./Images/foodinwarehouse.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+ } */
+
+
+ /* #region Section Five */
+#section-five {
+  width: 100%;
+}
+
+#footer-links {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+footer .block {
+  height: 6rem;
+  min-width: 50rem;
+  width: fit-content;
+  border-radius: 1rem;
+  display: flex;
+  padding: 1rem;
+  background-color: var(--primary);
+}
+
+footer .block a {
+  margin: auto;
+  font-size: 2rem;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+/* #endregion */
